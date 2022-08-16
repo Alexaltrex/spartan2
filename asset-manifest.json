@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/spartan2/static/css/main.c49741ee.css",
-    "main.js": "/spartan2/static/js/main.1a679c8e.js",
+    "main.css": "/spartan2/static/css/main.5a2060a2.css",
+    "main.js": "/spartan2/static/js/main.5bdf6723.js",
     "static/js/787.d2bd6ffc.chunk.js": "/spartan2/static/js/787.d2bd6ffc.chunk.js",
+    "static/media/videoPlaceHolder.jpg": "/spartan2/static/media/videoPlaceHolder.0efb8bf28cce01a7df20.jpg",
     "static/media/card4.png": "/spartan2/static/media/card4.e5c4c88226f1570cf160.png",
     "static/media/card1.png": "/spartan2/static/media/card1.65791689b96067f23e89.png",
+    "static/media/videoPlaceHolderModal.jpg": "/spartan2/static/media/videoPlaceHolderModal.dca9b55c3ad1c09b111b.jpg",
     "static/media/firstBlock.png": "/spartan2/static/media/firstBlock.f1d4cbbeff8b7d3d37f8.png",
     "static/media/card5.png": "/spartan2/static/media/card5.cf9d70aba6f9d51f4da1.png",
     "static/media/card3.png": "/spartan2/static/media/card3.9ebb89d2bbdd48007327.png",
@@ -22,12 +24,12 @@
     "static/media/tab1_1.png": "/spartan2/static/media/tab1_1.7c22dca5bbdb8b7dcb51.png",
     "static/media/avatar.jpg": "/spartan2/static/media/avatar.dcf82358edae5ee8865e.jpg",
     "index.html": "/spartan2/index.html",
-    "main.c49741ee.css.map": "/spartan2/static/css/main.c49741ee.css.map",
-    "main.1a679c8e.js.map": "/spartan2/static/js/main.1a679c8e.js.map",
+    "main.5a2060a2.css.map": "/spartan2/static/css/main.5a2060a2.css.map",
+    "main.5bdf6723.js.map": "/spartan2/static/js/main.5bdf6723.js.map",
     "787.d2bd6ffc.chunk.js.map": "/spartan2/static/js/787.d2bd6ffc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c49741ee.css",
-    "static/js/main.1a679c8e.js"
+    "static/css/main.5a2060a2.css",
+    "static/js/main.5bdf6723.js"
   ]
 }

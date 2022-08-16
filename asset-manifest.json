@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/spartan2/static/css/main.96f5751c.css",
+    "main.js": "/spartan2/static/js/main.c1db98db.js",
+    "static/js/787.d2bd6ffc.chunk.js": "/spartan2/static/js/787.d2bd6ffc.chunk.js",
+    "static/media/card4.png": "/spartan2/static/media/card4.e5c4c88226f1570cf160.png",
+    "static/media/card1.png": "/spartan2/static/media/card1.65791689b96067f23e89.png",
+    "static/media/firstBlock.png": "/spartan2/static/media/firstBlock.f1d4cbbeff8b7d3d37f8.png",
+    "static/media/card5.png": "/spartan2/static/media/card5.cf9d70aba6f9d51f4da1.png",
+    "static/media/card3.png": "/spartan2/static/media/card3.9ebb89d2bbdd48007327.png",
+    "static/media/card0.png": "/spartan2/static/media/card0.c722abee656614c68754.png",
+    "static/media/DrukCond-Super-Cy-Gr-Web.ttf": "/spartan2/static/media/DrukCond-Super-Cy-Gr-Web.b61ac8e3cda7371e8e6e.ttf",
+    "static/media/card2.png": "/spartan2/static/media/card2.5e8064c3f18c80122f7a.png",
+    "static/media/DrukWideBold.otf": "/spartan2/static/media/DrukWideBold.1bba1ad336fd64b6d385.otf",
+    "static/media/tab0_desktop.png": "/spartan2/static/media/tab0_desktop.05ea202d6b6740d65f73.png",
+    "static/media/tab0_mobile.png": "/spartan2/static/media/tab0_mobile.1b81817373c28d6fb0b2.png",
+    "static/media/tab2.png": "/spartan2/static/media/tab2.5a509aa2cf4ed0e4f4a2.png",
+    "static/media/tab1_0.png": "/spartan2/static/media/tab1_0.5b57baeaf246a7d92472.png",
+    "static/media/tab1_4.png": "/spartan2/static/media/tab1_4.d20e3e27df6dc8343d48.png",
+    "static/media/tab1_3.png": "/spartan2/static/media/tab1_3.99cec709ba3742516967.png",
+    "static/media/tab1_2.png": "/spartan2/static/media/tab1_2.5e2b30d45d50fb38e57a.png",
+    "static/media/tab1_1.png": "/spartan2/static/media/tab1_1.7c22dca5bbdb8b7dcb51.png",
+    "static/media/avatar.jpg": "/spartan2/static/media/avatar.dcf82358edae5ee8865e.jpg",
+    "index.html": "/spartan2/index.html",
+    "main.96f5751c.css.map": "/spartan2/static/css/main.96f5751c.css.map",
+    "main.c1db98db.js.map": "/spartan2/static/js/main.c1db98db.js.map",
+    "787.d2bd6ffc.chunk.js.map": "/spartan2/static/js/787.d2bd6ffc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96f5751c.css",
+    "static/js/main.c1db98db.js"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spartan2/static/css/main.c49741ee.css",
-    "main.js": "/spartan2/static/js/main.e249cbe5.js",
+    "main.js": "/spartan2/static/js/main.1a679c8e.js",
     "static/js/787.d2bd6ffc.chunk.js": "/spartan2/static/js/787.d2bd6ffc.chunk.js",
     "static/media/card4.png": "/spartan2/static/media/card4.e5c4c88226f1570cf160.png",
     "static/media/card1.png": "/spartan2/static/media/card1.65791689b96067f23e89.png",
@@ -23,11 +23,11 @@
     "static/media/avatar.jpg": "/spartan2/static/media/avatar.dcf82358edae5ee8865e.jpg",
     "index.html": "/spartan2/index.html",
     "main.c49741ee.css.map": "/spartan2/static/css/main.c49741ee.css.map",
-    "main.e249cbe5.js.map": "/spartan2/static/js/main.e249cbe5.js.map",
+    "main.1a679c8e.js.map": "/spartan2/static/js/main.1a679c8e.js.map",
     "787.d2bd6ffc.chunk.js.map": "/spartan2/static/js/787.d2bd6ffc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c49741ee.css",
-    "static/js/main.e249cbe5.js"
+    "static/js/main.1a679c8e.js"
   ]
 }

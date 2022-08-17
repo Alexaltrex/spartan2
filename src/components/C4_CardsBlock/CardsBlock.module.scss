@@ -1,0 +1,40 @@
+@import "../../assets/scss/app";
+
+.cardsBlock {
+  @include container;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 138px;
+
+  @include desktop {
+    padding-top: 188px;
+  }
+
+  .inner {
+    @include inner;
+
+    .title {
+      @include desktop {
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .cards {
+      margin-top: 67px;
+
+      @include desktop {
+        margin-top: 99px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 26px;
+      }
+
+
+    }
+
+  }
+}

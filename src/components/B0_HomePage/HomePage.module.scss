@@ -1,0 +1,27 @@
+@import "../../assets/scss/app";
+
+.homePage {
+  position: relative;
+overflow: hidden;
+
+  .map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    height: 735px;
+    width: 1551px;
+    //width: 100vw;
+    //object-fit: cover;
+
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @include desktop{
+      height: 1174px;
+      width: 2477px;
+    }
+
+
+  }
+}

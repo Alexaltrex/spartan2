@@ -1,0 +1,141 @@
+@import "../../assets/scss/app";
+
+.firstBlock {
+  @include container;
+  padding-top: 106px;
+  //background: url(../../assets/png/firstBlockBackground.png);
+  //background-size: contain;
+  //background-position: center;
+  //background-repeat: no-repeat;
+
+
+  @include desktop {
+    padding-top: 246px;
+  }
+
+  .map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    height: 735px;
+    width: 100vw;
+    object-fit: cover;
+    //width: 1551px;
+    //transform: translateX(-50%);
+    z-index: 1;
+
+    @include desktop{
+      height: 1174px;
+    }
+
+
+  }
+
+
+  .inner {
+    position: relative;
+    z-index: 2;
+    @include inner;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      display: block;
+      width: 226.18px;
+      height: 263.26px;
+
+      @include desktop {
+        width: 394.59px;
+        height: 459.27px;
+      }
+    }
+
+    .title {
+      @include DrukWide;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 36px;
+
+      @include desktop {
+        font-size: 50px;
+        line-height: 52px;
+        width: 635px;
+        margin-top: 80px;
+      }
+    }
+
+    .description {
+      text-align: center;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 36px;
+
+      @include desktop {
+        width: 560px;
+        margin-top: 25px;
+      }
+    }
+
+    .btn {
+      @include button;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 44px;
+      border: 1px solid #2D2D2D;
+      border-radius: 999px;
+      margin-top: 56px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        display: flex;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 90%;
+        background: #CC092F;
+        z-index: 1;
+      }
+
+      @include desktop {
+        width: 414px;
+        height: 54px;
+        margin-top: 42px;
+      }
+
+      span {
+        position: relative;
+        z-index: 2;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+    }
+
+    .supply {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 36px;
+
+      @include desktop {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.2em;
+        margin-top: 42px;
+      }
+    }
+
+  }
+}

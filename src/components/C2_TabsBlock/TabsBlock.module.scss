@@ -1,0 +1,266 @@
+@import "../../assets/scss/app";
+
+.tabsBlock {
+  @include container;
+  padding-top: 116px;
+
+  @include desktop {
+    padding-top: 300px;
+  }
+
+  .inner {
+    @include inner;
+
+    .title {
+      @include desktop {
+        width: 745px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 75px;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      @include desktop {
+        margin-top: 98px;
+        overflow: hidden;
+      }
+
+        .tabsInner {
+          width: 100%;
+          display: flex;
+          box-sizing: border-box;
+          border-bottom: 1px solid #585858;
+          padding-bottom: 25px;
+
+          @include desktop {
+            justify-content: center;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-bottom: 18px;
+          }
+
+          .btn {
+            position: relative;
+            @include button;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #595959;
+            transition: 0.3s;
+            white-space: nowrap;
+
+            &_selected {
+              color: #FFF;
+
+              &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                height: 5px;
+                width: 100%;
+                left: 0;
+                bottom: -25px;
+                background: #FFF;
+
+                @include desktop {
+                  bottom: -18px;
+                }
+              }
+            }
+
+            &:not(:first-child) {
+              margin-left: 24px;
+
+              @include desktop {
+                margin-left: 80px;
+              }
+            }
+          }
+        }
+    }
+
+    .block0 {
+      position: relative;
+      @include centerColumn;
+      margin-top: 65px;
+
+      @include desktop {
+        margin-top: 117px;
+      }
+
+      img {
+        position: relative;
+        z-index: 1;
+      }
+
+      .src0m {
+        @include onlyMobile();
+        width: 316px;
+      }
+
+      .src0d {
+        @include onlyDesktop();
+        width: 870px;
+      }
+
+      .text {
+        @include absoluteCenter;
+        z-index: 2;
+        @include DrukCond;
+        font-size: 103.158px;
+        line-height: 84px;
+        letter-spacing: 0.0025em;
+        text-transform: uppercase;
+        text-shadow: 0px -20.646px 58.2946px #000000;
+        width: 170px;
+        text-align: center;
+
+        @include desktop {
+          font-weight: 950;
+          font-size: 216.29px;
+          line-height: 79.6%;
+          text-shadow: 0px -28.726px 81.1086px #000000;
+          width: auto;
+        }
+      }
+
+    }
+
+    .block1 {
+      position: relative;
+      @include centerColumn;
+      margin-top: 65px;
+
+      @include desktop {
+        margin-top: 90px;
+      }
+
+      .mobile {
+        position: relative;
+        z-index: 1;
+        @include onlyMobile;
+        display: flex;
+        justify-content: center;
+
+        .row {
+          display: flex;
+          flex-direction: column;
+
+          &:last-child {
+            margin-top: 96px;
+            margin-left: 20px;
+          }
+
+          img {
+            width: 100px;
+
+            &:not(:first-child) {
+              margin-top: 20px;
+            }
+          }
+        }
+
+      }
+
+      .desktop {
+        position: relative;
+        z-index: 1;
+        @include onlyDesktop(flex);
+        justify-content: space-between;
+
+        img {
+          width: 142px;
+          height: 193px;
+
+          &:not(:first-child) {
+            margin-left: 48px;
+          }
+
+          &:nth-child(1) {
+            margin-top: 125px;
+          }
+
+          &:nth-child(3) {
+            margin-top: 149px;
+          }
+
+          &:nth-child(4) {
+            margin-top: 52px;
+          }
+
+          &:nth-child(5) {
+            margin-top: 116px;
+          }
+
+        }
+      }
+
+      .text {
+        @include absoluteCenter;
+        z-index: 2;
+        @include DrukCond;
+        font-size: 103.158px;
+        line-height: 84px;
+        letter-spacing: 0.0025em;
+        text-transform: uppercase;
+        text-shadow: 0px -20.646px 58.2946px #000000;
+        text-align: center;
+        width: 170px;
+
+        @include desktop {
+          font-weight: 950;
+          font-size: 216.29px;
+          line-height: 79.6%;
+          text-shadow: 0px -28.726px 81.1086px #000000;
+          width: auto;
+        }
+      }
+    }
+
+    .block2 {
+      position: relative;
+      margin-top: 18px;
+      height: 460px;
+      background: url(../../assets/png/tabsBlock/tab2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      @include centerColumn;
+
+      @include desktop {
+        height: 460px;
+      }
+
+      .text {
+        @include DrukCond;
+        font-size: 103.158px;
+        line-height: 84px;
+        letter-spacing: 0.0025em;
+        text-transform: uppercase;
+        text-shadow: 0px -20.646px 58.2946px #000000;
+        text-align: center;
+        width: 170px;
+
+        @include desktop {
+          font-weight: 950;
+          font-size: 216.29px;
+          line-height: 79.6%;
+          text-shadow: 0px -28.726px 81.1086px #000000;
+          width: auto;
+        }
+      }
+
+    }
+
+  }
+}

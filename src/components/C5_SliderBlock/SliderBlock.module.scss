@@ -1,0 +1,187 @@
+@import "../../assets/scss/app";
+
+.sliderBlock {
+  margin-top: 218px;
+
+  @include desktop {
+    margin-top: 189px;
+  }
+
+  .swiperWrapper {
+    margin-top: 50px;
+
+    @include desktop {
+      margin-top: 118px;
+    }
+
+
+    @include container;
+    padding-left: 0;
+    padding-right: 0;
+
+    .swiper {
+      @include inner;
+
+      .slide {
+        cursor: pointer;
+        box-sizing: border-box;
+        background: #2D2C2C;
+        width: 290px;
+        height: 385px;
+        padding: 72px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @include desktop {
+          width: 460px;
+          height: 613px;
+          padding: 56px 36px 133px;
+          justify-content: space-between;
+        }
+
+        .date {
+          @include onlyDesktop();
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+
+        .title {
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 31px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+
+          @include desktop {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 5px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .controlWrapper {
+    @include container;
+    margin-top: 40px;
+
+    @include desktop {
+      margin-top: 92px;
+    }
+
+    .controlInner {
+      @include inner;
+      display: flex;
+      align-items: center;
+
+      .status {
+        flex-grow: 1;
+        height: 7px;
+        background: #3A3A3A;
+        transition: 0.3s;
+
+        .statusInner {
+          height: 7px;
+          background: #FFFFFF;
+        }
+      }
+
+      .btns {
+        @include onlyDesktop(flex);
+        margin-left: 28px;
+
+        .btn {
+          @include button;
+          @include centerRow;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #FFF;
+
+          svg {
+            transform: translateX(-3px);
+          }
+
+          &:last-child {
+            margin-left: 20px;
+
+            svg {
+                transform: rotate(180deg) translateX(-3px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    @include centerRow;
+
+    .placeholder {
+      display: block;
+      width: 100%;
+
+
+      @include desktop {
+        width: 1040px;
+        height: 650px;
+      }
+
+    }
+
+    .closeBtn {
+      @include button;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      width: 24px;
+      height: 24px;
+      z-index: 2;
+    }
+
+    .video {
+      position: relative;
+      z-index: 1;
+    }
+
+    .playBtn {
+      @include button;
+      @include absoluteCenter;
+      @include centerColumn;
+      background: #FFF;
+      z-index: 2;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      @include desktop {
+        width: 88px;
+        height: 88px;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+
+        @include desktop {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+}

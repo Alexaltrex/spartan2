@@ -1,0 +1,64 @@
+@import "../../assets/scss/app";
+
+.mintSoldOutBottom {
+  @include container;
+  background: #910A15;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+
+  .inner {
+    @include inner;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 160%;
+      text-align: center;
+      color: #FFF;
+
+      @include desktop {
+        margin-top: 40px;
+        font-size: 16px;
+        width: 560px;
+      }
+    }
+
+    .btn {
+      @include button;
+      margin-top: 30px;
+      padding: 15px 22px;
+      background: #FFFFFF;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #000000;
+      transition: 0.3s;
+
+      &:hover {
+        background: #AAA;
+      }
+
+      @include desktop {
+        margin-top: 40px;
+        padding: 17px 30px;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+  }
+
+}

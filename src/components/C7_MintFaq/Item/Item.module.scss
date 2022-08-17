@@ -1,0 +1,101 @@
+@import "../../../assets/scss/app";
+
+.item {
+  padding-bottom: 30px;
+
+  @include desktop {
+    padding-bottom: 40px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #404040;
+  }
+
+  &:not(:first-child) {
+    margin-top: 30px;
+
+    @include desktop {
+      margin-top: 40px;
+    }
+  }
+
+
+  .questionBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .question {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 160%;
+      color: #FFF;
+
+      @include desktop {
+        font-size: 20px;
+      }
+    }
+
+    .btn {
+      margin-left: 16px;
+      @include button;
+
+      svg {
+        width: 18px;
+        height: 18px;
+
+        & path {
+          fill: #4C4C4C;
+          transition: 0.3s;
+        }
+
+        @include desktop {
+          width: 24px;
+          height: 24px;
+        }
+
+        &:hover path {
+          fill: #FFF;
+        }
+      }
+    }
+
+  }
+
+  //.answerBlock {
+  //  padding-top: 20px;
+  //  font-size: 14px;
+  //  line-height: 160%;
+  //  color: #FFF;
+  //  transform: scale(0);
+  //
+  //  @include desktop {
+  //    font-size: 16px;
+  //  }
+  //
+  //  a {
+  //    text-decoration: none;
+  //    font-weight: 700;
+  //    color: #CF1019;
+  //  }
+  //
+  //}
+}
+
+.answerBlock {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFF;
+
+  @include desktop {
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #CF1019;
+  }
+
+}

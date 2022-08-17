@@ -1,0 +1,35 @@
+@import "../../assets/scss/app";
+
+.burgerMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: #000;
+  transform: translateX(101%);
+  transition: 0.3s;
+  @include centerColumn;
+
+  &_show {
+    transform: translateX(0);
+  }
+
+  .links {
+    @include centerColumn;
+
+    .link {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #FFF;
+
+      &:not(:first-child) {
+        margin-top: 40px;
+      }
+    }
+  }
+}

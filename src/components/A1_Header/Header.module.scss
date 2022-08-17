@@ -1,0 +1,180 @@
+@import "../../assets/scss/app";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  .topBlock {
+    box-sizing: border-box;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0 16px;
+
+    @include desktop {
+      height: 40px;
+      padding: 0 70px;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        @include onlyMobile;
+        width: 44px;
+        height: 44px;
+        margin-right: 16px;
+
+        svg {
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      .findBtnTop {
+        @include onlyMobile;
+      }
+
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .search {
+        @include onlyDesktop;
+        margin-right: 16px;
+        width: 16px;
+        height: 16px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .cart {
+        width: 44px;
+        height: 44px;
+
+        @include desktop {
+          width: 32px;
+          height: 32px;
+        }
+
+        svg {
+          width: 44px;
+          height: 44px;
+
+          @include desktop {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      .burgerBtn {
+        @include onlyMobile();
+        @include button;
+        @include centerRow;
+        width: 44px;
+        height: 44px;
+      }
+
+      .globe {
+        margin-left: 16px;
+        @include onlyDesktop;
+        margin-right: 16px;
+        width: 16px;
+        height: 16px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .deka {
+        margin-left: 45px;
+        @include onlyDesktop;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #979797;
+      }
+    }
+  }
+
+  .bottomBlock {
+    border-top: 1px solid rgba(255,255,255, 0.2);
+    position: relative;
+    padding: 15px 70px;
+    @include onlyDesktop(flex);
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: block;
+      width: 50px;
+      height: 50px;
+
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .links {
+      @include absoluteCenter;
+      display: flex;
+
+      .link {
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 34px;
+      }
+    }
+
+    .rightBlock {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        margin-left: 20px;
+        border: 2px solid #FFF;
+        background: #FFF;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 38px;
+          height: 38px;
+        }
+      }
+
+    }
+
+
+  }
+
+  .findBtn {
+    @include button;
+    padding: 15px 22px;
+    background: #CF1019;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+
+  }
+}

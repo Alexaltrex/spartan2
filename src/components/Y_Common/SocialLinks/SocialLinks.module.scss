@@ -1,0 +1,31 @@
+@import "../../../assets/scss/app";
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+
+  .socialLink {
+    display: block;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+        transition: 0.3s;
+        //fill: #FFF;
+      }
+    }
+
+    &:hover {
+      svg path {
+        transition: 0.3s;
+        fill: #AAA;
+      }
+    }
+  }
+}

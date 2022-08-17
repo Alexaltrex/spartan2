@@ -1,0 +1,22 @@
+@import "../../assets/scss/app";
+
+.mintFaq {
+  @include container;
+  margin-top: 210px;
+
+  @include desktop {
+    margin-top: 320px;
+  }
+
+  .inner {
+    @include inner;
+
+    .items {
+      margin-top: 46px;
+
+      @include desktop {
+        margin-top: 80px;
+      }
+    }
+  }
+}

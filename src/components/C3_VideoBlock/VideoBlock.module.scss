@@ -1,0 +1,47 @@
+@import "../../assets/scss/app";
+
+.videoBlock {
+  position: relative;
+  margin-top: 138px;
+  //border: 5px solid #FFF;
+  height: 596px;
+  background: url(../../assets/jpeg/videoPlaceHolder.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include desktop {
+    height: 744px;
+  }
+
+  .video {
+    position: relative;
+    z-index: 1;
+  }
+
+  .playBtn {
+    @include button;
+    @include absoluteCenter;
+    @include centerColumn;
+    background: #FFF;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    @include desktop {
+      width: 88px;
+      height: 88px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+
+      @include desktop {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

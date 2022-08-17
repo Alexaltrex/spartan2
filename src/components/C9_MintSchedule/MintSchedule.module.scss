@@ -1,0 +1,143 @@
+@import "../../assets/scss/app";
+
+.mintSchedule {
+  background: #FFF;
+  @include container;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include desktop {
+    padding-top: 120px;
+  }
+
+  .inner {
+    @include inner;
+
+    .title {
+      color: #000;
+    }
+
+    .textLink {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 160%;
+      font-weight: 500;
+      color: #000;
+
+      @include desktop {
+        margin-top: 30px;
+        font-size: 16px;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        color: #CF1019;
+      }
+    }
+
+    .headerItems {
+      @include onlyDesktop(grid);
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 100px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #D7D7D7;
+
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #6C6C6C;
+      }
+    }
+
+    .items {
+      margin-top: 40px;
+
+      @include desktop {
+        margin-top: 20px;
+      }
+
+      .item {
+
+        &:not(:last-child) {
+          padding-bottom: 40px;
+          border-bottom: 1px solid #D7D7D7;
+        }
+
+        &:not(:first-child) {
+          padding-top: 40px;
+
+          @include desktop {
+            padding-top: 20px;
+          }
+        }
+
+        @include desktop {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .left {
+
+          .time {
+            @include DrukCyr;
+            font-size: 50px;
+            line-height: 63px;
+            text-transform: uppercase;
+            color: #000;
+
+            @include desktop {
+              font-size: 80px;
+              line-height: 102px;
+            }
+          }
+
+          .date {
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            color: #CF1019;
+
+            @include desktop {
+              margin-top: 20px;
+            }
+          }
+        }
+
+        .right {
+          margin-top: 22px;
+
+          @include desktop {
+            margin-top: 0;
+          }
+
+          .title {
+            @include DrukCyr;
+            font-size: 50px;
+            line-height: 63px;
+            text-transform: uppercase;
+            color: #000;
+
+            @include desktop {
+              font-size: 80px;
+              line-height: 102px;
+            }
+          }
+
+          .text {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+            color: #000;
+          }
+        }
+      }
+
+    }
+
+  }
+}

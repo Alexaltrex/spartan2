@@ -1,0 +1,15 @@
+@import "../../../assets/scss/app";
+
+.h2 {
+  @include DrukWide;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}

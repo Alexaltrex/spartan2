@@ -1,0 +1,119 @@
+@import "../../assets/scss/app";
+
+.roadmap {
+  @include container;
+  padding-top: 150px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 243px;
+  }
+
+  .inner {
+    @include inner;
+
+    .items {
+      margin-top: 46px;
+
+      @include desktop {
+        margin-top: 162px;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 36px;
+
+        @include desktop {
+          position: relative;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: 70px;
+          margin-top: 110px;
+
+          &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 38px;
+            height: 38px;
+            background: #121212;
+            border: 1px solid #DADADA;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            transform: translateX(-50%);
+          }
+        }
+
+        &:not(:last-child) {
+          @include desktop {
+            &::before {
+              position: absolute;
+              content: "";
+              display: block;
+              width: 1px;
+              background: #EDEDED;
+              top: 0;
+              left: 0;
+              bottom: -110px;
+            }
+          }
+        }
+
+        .titleBlock {
+          position: relative;
+
+          .date {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            color: #7E7E7E;
+
+            @include desktop {
+              position: absolute;
+              left: 0;
+              top: -10px;
+              transform: translateY(-100%);
+            }
+
+          }
+
+          .title {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.0025em;
+            text-transform: capitalize;
+            margin-top: 10px;
+
+            @include desktop {
+              margin-top: 0;
+              font-size: 35px;
+              line-height: 45px;
+              width: 450px;
+            }
+          }
+
+
+        }
+
+        .textsBlock {
+          margin-top: 27px;
+
+          @include desktop {
+            margin-top: 0;
+            width: 613px;
+          }
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+}

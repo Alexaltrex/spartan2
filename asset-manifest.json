@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spartan2/static/css/main.5a2060a2.css",
-    "main.js": "/spartan2/static/js/main.5bdf6723.js",
+    "main.css": "/spartan2/static/css/main.8275a979.css",
+    "main.js": "/spartan2/static/js/main.358fff18.js",
     "static/js/787.d2bd6ffc.chunk.js": "/spartan2/static/js/787.d2bd6ffc.chunk.js",
     "static/media/videoPlaceHolder.jpg": "/spartan2/static/media/videoPlaceHolder.0efb8bf28cce01a7df20.jpg",
     "static/media/card4.png": "/spartan2/static/media/card4.e5c4c88226f1570cf160.png",
@@ -13,6 +13,7 @@
     "static/media/card0.png": "/spartan2/static/media/card0.c722abee656614c68754.png",
     "static/media/DrukCond-Super-Cy-Gr-Web.ttf": "/spartan2/static/media/DrukCond-Super-Cy-Gr-Web.b61ac8e3cda7371e8e6e.ttf",
     "static/media/card2.png": "/spartan2/static/media/card2.5e8064c3f18c80122f7a.png",
+    "static/media/DrukCyr-Bold.ttf": "/spartan2/static/media/DrukCyr-Bold.691e180a654a8711e7ae.ttf",
     "static/media/DrukWideBold.otf": "/spartan2/static/media/DrukWideBold.1bba1ad336fd64b6d385.otf",
     "static/media/tab0_desktop.png": "/spartan2/static/media/tab0_desktop.05ea202d6b6740d65f73.png",
     "static/media/tab0_mobile.png": "/spartan2/static/media/tab0_mobile.1b81817373c28d6fb0b2.png",
@@ -24,12 +25,12 @@
     "static/media/tab1_1.png": "/spartan2/static/media/tab1_1.7c22dca5bbdb8b7dcb51.png",
     "static/media/avatar.jpg": "/spartan2/static/media/avatar.dcf82358edae5ee8865e.jpg",
     "index.html": "/spartan2/index.html",
-    "main.5a2060a2.css.map": "/spartan2/static/css/main.5a2060a2.css.map",
-    "main.5bdf6723.js.map": "/spartan2/static/js/main.5bdf6723.js.map",
+    "main.8275a979.css.map": "/spartan2/static/css/main.8275a979.css.map",
+    "main.358fff18.js.map": "/spartan2/static/js/main.358fff18.js.map",
     "787.d2bd6ffc.chunk.js.map": "/spartan2/static/js/787.d2bd6ffc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a2060a2.css",
-    "static/js/main.5bdf6723.js"
+    "static/css/main.8275a979.css",
+    "static/js/main.358fff18.js"
   ]
 }
